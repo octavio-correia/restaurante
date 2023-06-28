@@ -4,16 +4,19 @@
 }
 
 .cabecalho {
-    background-color: rgb(160, 212, 247);
-    height: 60px;
+    background: linear-gradient(to left,rgb(80, 199, 96), rgb(77, 175, 90) );
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo {
-    max-width: 45px;
-    margin-left: 20px;
+    max-width: 90px;
+    margin: 30px 0 0 20px;
+    border-radius: 90px;
+    box-shadow: 2px 2px 5px rgb(9, 0, 90);
+    z-index: 1;
 }
 
 .menus {
@@ -21,6 +24,57 @@
     justify-content: space-between;
 }
 
-.menus p {
+.menus a {
+    color: rgb(221, 221, 61);
+    text-shadow: 1px 1px 1px rgb(9, 0, 90);
+    text-decoration: none;
     margin: 10px;
+}
+
+.final {
+    margin-right: 50px;
+}
+
+.containerMenu {
+    position: relative;
+}
+
+.carne {
+    opacity: 0.7;
+    width: 100%;
+}
+
+.textoMenu {
+    width: 1000px;
+    position: absolute;
+    /* Define a posição absoluta para o texto */
+    top: 50%;
+    /* Alinha o texto verticalmente ao centro */
+    left: 50%;
+    /* Alinha o texto horizontalmente ao centro */
+    transform: translate(-50%, -50%);
+    /* Centraliza o texto exatamente no centro */
+    z-index: 1;
+    /* Define uma ordem de sobreposição maior que a imagem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(9, 0, 90);
+    color: rgb(84, 230, 103);
+    opacity: 0;
+    transition: top 1s, opacity 1s;
+    /* Adiciona transições para suavizar o efeito */
+
+}
+
+
+.hidden {
+    visibility: hidden;
+    /* Esconde o texto inicialmente */
 }
