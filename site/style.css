@@ -68,13 +68,6 @@
     text-shadow: 2px 2px 5px rgb(9, 0, 90);
     color: rgb(84, 230, 103);
     opacity: 0;
-    transition: top 1s, opacity 1s;
+    transition: top 2s, opacity 2s;
     /* Adiciona transições para suavizar o efeito */
-
-}
-
-
-.hidden {
-    visibility: hidden;
-    /* Esconde o texto inicialmente */
 }
