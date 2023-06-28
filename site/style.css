@@ -31,6 +31,10 @@
     margin: 10px;
 }
 
+.menusTopo {
+    transition: font-size 0.3s ease-in-out;
+}
+
 .final {
     margin-right: 50px;
 }
