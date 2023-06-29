@@ -5,14 +5,14 @@
 
 .cabecalho {
     background: linear-gradient(to right, rgb(50, 124, 60), rgb(56, 187, 74));
-    height: 65px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo {
-    max-width: 90px;
+    max-width: 80px;
     margin: 30px 0 0 20px;
     border-radius: 90px;
     box-shadow: 2px 2px 5px rgb(9, 0, 90);
@@ -21,6 +21,7 @@
 
 .menus {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -31,7 +32,6 @@
     margin: 10px;
     transition: font-size 0.3s ease-in-out;
 }
-
 
 
 .final {
@@ -82,14 +82,9 @@
 
 }
 
-hr {
-    border-width:3px;
-    border-color: rgb(8, 1, 29);
-}
-
 footer {
     background: linear-gradient(to right, rgb(50, 124, 60), rgb(56, 187, 74));
-    height: 65px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: space-between;
