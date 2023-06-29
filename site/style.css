@@ -4,7 +4,7 @@
 }
 
 .cabecalho {
-    background: linear-gradient(to left,rgb(80, 199, 96), rgb(77, 175, 90) );
+    background: linear-gradient(to right, rgb(50, 124, 60), rgb(56, 187, 74));
     height: 65px;
     display: flex;
     align-items: center;
@@ -29,11 +29,10 @@
     text-shadow: 1px 1px 1px rgb(9, 0, 90);
     text-decoration: none;
     margin: 10px;
-}
-
-.menusTopo {
     transition: font-size 0.3s ease-in-out;
 }
+
+
 
 .final {
     margin-right: 50px;
@@ -46,20 +45,18 @@
 .carne {
     opacity: 0.7;
     width: 100%;
+    margin-bottom: -4px;
+    
 }
 
 .textoMenu {
     width: 1000px;
     position: absolute;
-    /* Define a posição absoluta para o texto */
-    top: 50%;
-    /* Alinha o texto verticalmente ao centro */
+    top: calc(50% - 60px);
+    /* Move o texto 20 pixels para cima */
     left: 50%;
-    /* Alinha o texto horizontalmente ao centro */
     transform: translate(-50%, -50%);
-    /* Centraliza o texto exatamente no centro */
     z-index: 1;
-    /* Define uma ordem de sobreposição maior que a imagem */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,4 +71,26 @@
     opacity: 0;
     transition: top 2s, opacity 2s;
     /* Adiciona transições para suavizar o efeito */
+}
+
+.titulo {
+    font-family: 'Lobster', cursive;
+    font-weight: bolder;
+    max-width: 300px;
+    text-shadow: 2px 2px 5px rgb(209, 206, 0);
+    color: rgb(9, 0, 90);
+
+}
+
+hr {
+    border-width:3px;
+    border-color: rgb(8, 1, 29);
+}
+
+footer {
+    background: linear-gradient(to right, rgb(50, 124, 60), rgb(56, 187, 74));
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
