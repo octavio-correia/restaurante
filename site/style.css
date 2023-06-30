@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background: linear-gradient(to right, rgb(50, 124, 60), rgb(56, 187, 74));
+}
+
 .cabecalho {
     background: linear-gradient(to right, rgb(50, 124, 60), rgb(56, 187, 74));
     height: 45px;
@@ -30,7 +34,8 @@
     text-shadow: 1px 1px 1px rgb(9, 0, 90);
     text-decoration: none;
     margin: 10px;
-    transition: font-size 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+
 }
 
 
@@ -40,16 +45,22 @@
 
 .containerMenu {
     position: relative;
+    background-image: url(imagens/carne.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 750px;
 }
 
 .carne {
-    opacity: 0.7;
+    opacity: 0;
     width: 100%;
     margin-bottom: -4px;
-    
+
 }
 
 .textoMenu {
+    margin-top: 10%;
     width: 1000px;
     position: absolute;
     top: calc(50% - 60px);
@@ -58,6 +69,7 @@
     transform: translate(-50%, -50%);
     z-index: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -66,11 +78,34 @@
     font-family: 'Lobster', cursive;
     font-size: 60px;
     text-align: center;
-    text-shadow: 2px 2px 5px rgb(9, 0, 90);
+    text-shadow: 4px 4px 5px rgb(9, 0, 90);
     color: rgb(84, 230, 103);
     opacity: 0;
     transition: top 2s, opacity 2s;
     /* Adiciona transições para suavizar o efeito */
+}
+
+.carrossel {
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(68, 0, 0);
+    overflow: hidden;
+    height: 300px;
+    width: 500px;
+    margin: 40px;
+}
+
+.containerCarrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    /* utilizado para mover o objeto horizontalmente*/
+}
+
+.containerCarrossel img {
+    object-fit: cover;
+    height: 300px;
+    width: 500px;
+
 }
 
 .titulo {
@@ -80,12 +115,4 @@
     text-shadow: 2px 2px 5px rgb(209, 206, 0);
     color: rgb(9, 0, 90);
 
-}
-
-footer {
-    background: linear-gradient(to right, rgb(50, 124, 60), rgb(56, 187, 74));
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
