@@ -13,6 +13,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 5px solid rgba(4, 0, 39, 0.7)
 }
 
 .logo {
@@ -87,11 +88,12 @@ body{
 
 .carrossel {
     border-radius: 10px;
+    border: 5px solid rgb(4, 0, 39);
     box-shadow: 2px 2px 4px rgb(68, 0, 0);
     overflow: hidden;
     height: 300px;
     width: 500px;
-    margin: 40px;
+    margin: 30px;
 }
 
 .containerCarrossel {
@@ -114,5 +116,11 @@ body{
     max-width: 300px;
     text-shadow: 2px 2px 5px rgb(209, 206, 0);
     color: rgb(9, 0, 90);
+    border-bottom: 5px solid rgb(4, 0, 39);
+}
 
+footer{
+    background: linear-gradient(to left, rgb(50, 124, 60), rgb(56, 187, 74));
+    height: 140px;
+    border-top: 5px solid rgba(4, 0, 39, 0.7);
 }
