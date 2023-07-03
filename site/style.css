@@ -90,23 +90,21 @@ body{
     border-radius: 10px;
     border: 5px solid rgb(4, 0, 39);
     box-shadow: 2px 2px 4px rgb(68, 0, 0);
-    overflow: hidden;
-    height: 300px;
     width: 500px;
-    margin: 30px;
+    overflow: hidden;
+    margin-top: 60px;
 }
 
-.containerCarrossel {
+#containerCarrossel {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
     transform: translateX(0);
     /* utilizado para mover o objeto horizontalmente*/
 }
 
 .containerCarrossel img {
-    object-fit: cover;
-    height: 300px;
-    width: 500px;
+    width: 100%;
+    height: auto;
 
 }
 
@@ -119,8 +117,14 @@ body{
     border-bottom: 5px solid rgb(4, 0, 39);
 }
 
-footer{
+.frases{
     background: linear-gradient(to left, rgb(50, 124, 60), rgb(56, 187, 74));
     height: 140px;
     border-top: 5px solid rgba(4, 0, 39, 0.7);
+    display: flex;
+}
+
+.paragrafo{
+    color: yellow;
+    margin: 25px;
 }
