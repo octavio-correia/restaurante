@@ -9,11 +9,31 @@ window.addEventListener('DOMContentLoaded', function () {
   function frente() {
     idx++;
     if (idx > img.length - 1) {
-        idx = 0;
+      idx = 0;
     }
 
     imgs.style.transform = `translateX(${-idx * 500}px)`;
   }
 
-  setInterval(frente, 5000);
-});
+  setInterval(frente, 7000);
+
+
+
+  var iTexto = 0;
+  var txtLength = document.querySelectorAll(".paragrafo");
+  var txt = document.querySelectorAll(".paragrafo");
+
+  function frenteTxt() {
+    iTexto++;
+    if (iTexto > (txtLength.length*2) - 1) {
+      iTexto = 0;
+    }
+
+    txt.forEach(function (element) {
+      element.style.transform = `translateX(${-iTexto * 200}px)`;
+    })
+  }
+    setInterval(frenteTxt, 7000);
+
+ 
+})

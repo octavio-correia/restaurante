@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body{
+body {
     background: linear-gradient(to right, rgb(50, 124, 60), rgb(56, 187, 74));
 }
 
@@ -97,7 +97,7 @@ body{
 
 #containerCarrossel {
     display: flex;
-    transition: transform 1s ease-in-out;
+    transition: transform 2s ease-in-out;
     transform: translateX(0);
     /* utilizado para mover o objeto horizontalmente*/
 }
@@ -114,17 +114,41 @@ body{
     max-width: 300px;
     text-shadow: 2px 2px 5px rgb(209, 206, 0);
     color: rgb(9, 0, 90);
-    border-bottom: 5px solid rgb(4, 0, 39);
 }
 
-.frases{
-    background: linear-gradient(to left, rgb(50, 124, 60), rgb(56, 187, 74));
-    height: 140px;
-    border-top: 5px solid rgba(4, 0, 39, 0.7);
+.frases {
     display: flex;
+    justify-content: space-between;
+
+    border-top: 4px solid rgba(6, 1, 54, 0.7);
+    background: linear-gradient(to left, rgb(50, 124, 60), rgb(56, 187, 74))
+
 }
 
-.paragrafo{
-    color: yellow;
-    margin: 25px;
+.containerParagrafo {
+    height: 200px;
+    width: 200px;
+
+    display: flex;
+    overflow: hidden;
+
+    margin: 100px 100px;
+
+    color: rgb(6, 1, 54);
+    text-shadow: 2px 2px 1px rgb(211, 211, 0);
+}
+
+.containerParagrafo p {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragrafo {
+    display: flex;
+    transition: transform 2s ease-in-out;
+    transform: translateX(0);
 }
