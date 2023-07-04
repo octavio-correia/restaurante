@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     txt.forEach(function (element) {
-      element.style.transform = `translateX(${-iTexto * 200}px)`;
+      element.style.transform = `translateX(${-iTexto * 220}px)`;
     })
   }
     setInterval(frenteTxt, 7000);
