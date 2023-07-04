@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   function frenteTxt() {
     iTexto++;
-    if (iTexto > (txtLength.length*2) - 1) {
+    if (iTexto > (txtLength.length*2) - 3) {
       iTexto = 0;
     }
 

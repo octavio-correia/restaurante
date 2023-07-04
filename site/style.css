@@ -4,7 +4,7 @@
 }
 
 body {
-    background: linear-gradient(to right, rgb(50, 124, 60), rgb(56, 187, 74));
+    background: linear-gradient(to left, rgb(50, 124, 60), rgb(56, 187, 74));
 }
 
 .cabecalho {
@@ -116,12 +116,21 @@ body {
     color: rgb(9, 0, 90);
 }
 
+.divisor{
+    height: 50px;
+    background: linear-gradient(to right, rgb(50, 124, 60), rgb(56, 187, 74));
+    border-bottom: 2px solid rgb(5, 0, 44);
+    border-top: 2px solid rgb(5, 0, 44);
+}
+
+.containerFrasesPratos{
+    background-image: url(imagens/restaurante1.png);
+    background-size: cover;
+}
+
 .frases {
     display: flex;
-    justify-content: space-between;
-
-    border-top: 4px solid rgba(6, 1, 54, 0.7);
-    background: linear-gradient(to left, rgb(50, 124, 60), rgb(56, 187, 74))
+    justify-content: space-between;  
 
 }
 
@@ -145,10 +154,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(142, 153, 144, 0.1);
+    border-radius: 100px;
 }
 
 .paragrafo {
     display: flex;
     transition: transform 2s ease-in-out;
     transform: translateX(0);
+}
+
+.pratos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pratos img{
+    height: 200px;
+    margin-bottom: 100px;
+    border-radius: 10px;
 }
