@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to left, rgb(50, 124, 60), rgb(56, 187, 74));
+}
+
+.cabecalho {
+    background: linear-gradient(to right, rgb(50, 124, 60), rgb(56, 187, 74));
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid rgba(4, 0, 39, 0.7)
+}
+
+.menusTopo{
+    transition: transform 0.3s ease-in-out;
+}
+
+.menusTopo:hover{
+    transform: scale(1.1);
+    color: rgb(9, 0, 90);
+}
+
+.logo {
+    max-width: 80px;
+    margin: 30px 0 0 20px;
+    border-radius: 90px;
+    box-shadow: 2px 2px 5px rgb(9, 0, 90);
+    z-index: 1;
+}
+
+.menus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menus a {
+    color: rgb(221, 221, 61);
+    text-shadow: 1px 1px 1px rgb(9, 0, 90);
+    text-decoration: none;
+    margin: 10px;
+    transition: color 0.3s ease-in-out;
+
+}
+
+
+.final {
+    margin-right: 50px;
+}
