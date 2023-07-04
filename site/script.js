@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function () {
       element.style.transform = `translateX(${-iTexto * 220}px)`;
     })
   }
-    setInterval(frenteTxt, 7000);
+    setInterval(frenteTxt, 10000);
 
  
 })

@@ -106,7 +106,7 @@ body {
 
 #containerCarrossel {
     display: flex;
-    transition: transform 2s ease-in-out;
+    transition: transform 4s ease-in-out;
     transform: translateX(0);
     /* utilizado para mover o objeto horizontalmente*/
 }
@@ -171,7 +171,7 @@ body {
 
 .paragrafo {
     display: flex;
-    transition: transform 2s ease-in-out;
+    transition: transform 5s ease-in-out;
     transform: translateX(0);
 }
 
