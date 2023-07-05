@@ -69,9 +69,26 @@ hr {
 }
 
 .container {
+    width: 45%;
     display: flex;
     justify-content: space-around;
 }
+
+.pratosContainer {
+    width: 100%;
+    height: 500px;
+
+    margin: 5px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 .feijoada,
 .moqPeixe,
@@ -79,16 +96,13 @@ hr {
 .bobo,
 .picanha,
 .acaraje {
-    width: 45%;
-    height: 500px;
-
-    margin: 5px;
+    width: 33%;
+    height: 100px;
 
     border: 2px solid black;
-    border-radius: 10px;
 }
 
-.carne:hover + .imagemContainer{
+.feijoada:hover+.imagemContainer {
     background-image: url(../imagens/carne.png);
     background-size: cover;
     background-position: center;
@@ -104,12 +118,11 @@ hr {
     border: 2px solid black;
     border-radius: 10px;
 
-    background-color: yellow;
-
-    position: relative;
 }
 
-.container a{
-    height: 50px;
-    width: 50px;
+.containerDoContainer {
+    margin: 25px;
+
+    display: flex;
+    justify-content: space-around;
 }
