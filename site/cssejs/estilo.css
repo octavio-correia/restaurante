@@ -16,11 +16,11 @@ body {
     border-bottom: 5px solid rgba(4, 0, 39, 0.7)
 }
 
-.menusTopo{
+.menusTopo {
     transition: transform 0.3s ease-in-out;
 }
 
-.menusTopo:hover{
+.menusTopo:hover {
     transform: scale(1.1);
     color: rgb(9, 0, 90);
 }
@@ -51,4 +51,69 @@ body {
 
 .final {
     margin-right: 50px;
+}
+
+
+h1 {
+    margin: 25px;
+
+    text-align: center;
+    color: rgb(9, 0, 90);
+    text-shadow: 3px 3px 3px yellow;
+    font-size: 55px;
+    font-family: 'Lobster', cursive;
+}
+
+hr {
+    border: 2px solid rgba(4, 0, 39, 0.7);
+}
+
+.container {
+    margin-top: 40px;
+    display: flex;
+}
+
+.comidas {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+}
+
+.comidas a {
+    flex-basis: calc(33.33% - 10px);
+    /* 33.33% para ocupar 1/3 da largura e 10px de margem entre os elementos */
+
+    margin: 10px;
+    padding: 30px 5px;
+
+    border: 1px solid black;
+    border-radius: 3px;
+
+    text-decoration: none;
+    color: black;
+}
+
+.imagensComidas {
+    width: 45%;
+    height: 350px;
+    background-image: url(../imagens/restaurante1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.comidas a:hover{
+    transform: scale(1.1);
+}
+
+.imagensComidas p{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
 }
