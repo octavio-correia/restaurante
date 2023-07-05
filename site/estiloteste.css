@@ -1,0 +1,57 @@
+.botao {
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+
+    display: flex;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerBase{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container{    
+    text-decoration: none;
+    color: black;
+}
+
+.botao:hover {
+    transform: scale(1.1);
+}
+
+.imagem {
+    background-image: url(imagens/logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    border: 1px solid black; /* Valor inicial da borda */
+  
+    height: 200px;
+    width: 200px;
+    color: yellow;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    transition: border-radius 1s ease;
+    transition: background-image 1s ease;
+  }
+  
+  .botao:hover + .imagem {
+    background-image: url(imagens/carne.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    border: 5px solid black; /* Valor final da borda */
+  
+    border-radius: 180px;
+  }
